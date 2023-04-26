@@ -5,7 +5,6 @@ const shape = prompt('Enter which area to calculate ( either Square, Rectangle, 
 switch (shape) {
     case 'Square':
         const side = parseFloat(prompt('Enter Side: '));
-
         if (side < 0) {
             console.log('You need positive integers to calculate area!');
         }
@@ -13,8 +12,6 @@ switch (shape) {
             area = side * side;
             console.log(area);
         }
-
-
         break;
     case 'Rectangle':
         const length = parseFloat(prompt('Enter Length: '));
@@ -32,8 +29,8 @@ switch (shape) {
         if (base < 0 || height < 0) {
             console.log('You need positive integers to calculate area!');
         } else {
-        area = base * height / 2;
-        console.log(area);
+            area = base * height / 2;
+            console.log(area);
         }
         break;
     case 'Circle':
@@ -42,8 +39,8 @@ switch (shape) {
             console.log('You need positive integers to calculate area!');
         }
         else {
-        area = Math.PI * radius * radius;
-        console.log(area);
+            area = Math.PI * radius * radius;
+            console.log(area);
         }
         break;
 
