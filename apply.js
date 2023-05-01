@@ -11,4 +11,4 @@ const human = {
     lastName : "Carter",
 }
 
-person.getPersonDetails.call(human,"vizag","sansid")
+person.getPersonDetails.apply(human,["vizag","sansid"])
