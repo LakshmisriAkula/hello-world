@@ -1,0 +1,7 @@
+const {DateTime} = require("luxon")
+const date = DateTime.now()
+console.log(date)
+console.log(date.ts)
+console.log(date.year)
+console.log(date.month)
+console.log(date.day)
