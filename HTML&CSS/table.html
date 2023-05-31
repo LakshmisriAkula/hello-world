@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+<body>
+  <table title="myTable" border="3" bgcolor="limegreen" cellpadding="15px">
+    <!-- thead, tbody, tfoot -->
+    <caption>Price table</caption>
+    <colgroup>
+       <col span="1" style="background-color:red">
+       <col span="2" style="background-color:blue">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Heading 1</th>
+        <th>Heading 2</th>
+        <th>Heading 3</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td>Summary : </td>
+        <td>Total : $500</td>
+      </tr>
+    </tfoot>
+    <tbody>
+        <tr align="center">
+          <td colspan="2" rowspan="2">100</td>
+          <td>101</td>
+
+
+
+
+        </tr>
+        <tr align="center">
+          <td>200</td>
+          <td>201</td>
+          <td>302</td>
+        </tr>
+        <tr align="center">
+          <td>300</td>
+          <td>301</td>
+          <td>302</td>
+        </tr>
+        <tr align="center">
+          <td>400</td>
+          <td>401</td>
+          <td>402</td>
+        </tr>
+    </tbody>
+  </table>
+ <!-- Nested table -->
+  <table border="1" width="100%">
+    <!-- Outer table -->
+    <tr>
+      <td>
+        <table border="2" width="100%">
+          <!-- inner table -->
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+          </tr>
+          <tr>
+            <td>E001</td>
+            <td>John</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+</body>
+</html>
+
+
