@@ -1,0 +1,31 @@
+div.container {
+    height: 75%;
+	width: 75%; 
+	background-color: #0088dd;
+    border: 3px solid coral;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div.box {
+    background-color: green;
+  position: relative;
+  top: 50px;
+  left: 120px;
+}
+
+.paragraph {
+	position: absolute;
+	top: 300px;
+	right: 0px;
+}
+
+.title {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
