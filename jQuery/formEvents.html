@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+
+            $("#last").focus()
+
+            $("form").submit(function(event){
+                event.preventDefault()// prevent the page from reloading
+                $(this).append('<p>Form Submitted</p>')
+
+            })
+        })
+
+        </script>
+</head>
+<body>
+    <form>
+        First Name: <input type="text", id="first", value="Micky", name="firstName"><br>
+        Last Name: <input type="text", id="last", value="Mouse", name="lastName"><br>
+        <input type="Submit" value="Save">
+        
+
+    </form>
+</body>
+</html>

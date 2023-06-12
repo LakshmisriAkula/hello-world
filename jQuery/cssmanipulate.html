@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+
+            $('p').css('background-color', 'yellow');
+
+            $('p:nth-of-type(2)').addClass('yellowdiv');
+            $('p:nth-of-type(3)').addClass('imgPre');
+
+            $('p:nth-of-type(2)').toggleClass('yellowdiv');
+
+        })
+    </script>
+
+    <style>
+        .imgPre {
+            height: 50px;
+            margin-top: 10px;
+        }
+
+        .yellowdiv {
+            height: 50px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Demo: jQuery methods demo</h1>
+
+    <p>This is first paragraph.</p>
+    <p>This is second paragraph.</p>
+    <p>This is third paragraph.</p>
+</body>
+
+</html>
