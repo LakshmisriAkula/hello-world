@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript">
+        // https://jsonplaceholder.typicode.com/todos/1
+        function loadDoc() {
+            const request = new XMLHttpRequest();
+            request.open("POST", "https://jsonplaceholder.typicode.com/todos");
+            request.send(JSON.stringify({
+                title: 'foo',
+                body: 'bar',
+                userId: 1,
+                id: 21
+            }));
+            request.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 201) {
+                    document.getElementById("demo").innerHTML += this.responseText;
+                    console.log(this.readyState);
+                    console.log(this.status);
+                }
+            }
+            // Sending request to the server
+            request.setRequestHeader("Content-Type", "application/json;charset-UTF-8");
+        }
+    </script>
+</head>
+
+
+<body>
+    <h1> jQuery post() method demo
+    </h1>
+    <input type="button" onclick="loadDoc()" value="Send POST request" />
+    <p id="demo"></p>
+</body>
+
+
+</html>
