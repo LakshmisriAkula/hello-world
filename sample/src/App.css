@@ -1,0 +1,55 @@
+.reactheader{
+    background-color: blue;
+    padding: 50px;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+.navParent{
+
+    margin: 20px;
+}
+.navLink{
+
+    margin-left: 10px;
+    background-color: navy;
+    color: yellow;
+    text-decoration: none;
+    border: lime;
+    padding: 8px 12px;
+
+    
+}
+
+.navLink:hover{
+    background: orange;
+    color: brown;
+}
+
+.paraHome{
+
+    background-color: green;
+    color: white;
+    padding: 20px;
+}
+
+.blogButtons{
+
+    float: right;
+}
+
+.formParent{
+    transform: translate(-100%, -100%);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+
+}
+
+.formStyle{
+
+    padding: 20px;
+    border: 2px solid;
+}
