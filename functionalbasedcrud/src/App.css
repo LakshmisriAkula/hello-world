@@ -1,0 +1,74 @@
+* {
+  font-family: Helvetica;
+}
+
+
+
+
+.headerStyle {
+  text-align: center;
+  background: blue;
+  padding: 5px;
+  color: antiquewhite;
+}
+
+
+.outFormStyle {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  padding: 8px 12px;
+  border: 2px solid;
+}
+
+
+button {
+  background: navy;
+  color: antiquewhite;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+button:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+
+
+input[type=text] {
+  width: 200px;
+  height: 22px;
+  margin-bottom: 10px;
+}
+
+
+.itemStyle {
+  list-style-type: none;
+  padding: 5px;
+  border: 2px solid;
+  width: 30%;
+  background-color: beige;
+  margin: 5px;
+}
+
+
+.editBtn {
+  margin-left: 10px;
+}
+
+
+.submitEditBtn {
+
+
+  margin-left: 10px;
+  ;
+}
+
+
+.itemText{
+  margin: 5px;
+}
